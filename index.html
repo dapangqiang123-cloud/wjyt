@@ -3,44 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青岛万瑾运通物流有限公司 | 国际货运代理 | 海运空运陆运 | WJYT LOGISTICS</title>
-    
-    <!-- SEO 基础 -->
-    <meta name="description" content="青岛万瑾运通国际物流有限公司，专业从事国际海运、空运、陆运、多式联运、报关、仓储等综合物流服务。覆盖全球100+国家，与Maersk、COSCO、MSC等顶级船公司长期合作。">
-    <meta name="keywords" content="青岛货运代理,国际物流,海运,空运,陆运,多式联运,万瑾运通,WJYT,青岛物流公司,进出口报关,国际货代">
-    <meta name="author" content="青岛万瑾运通国际物流有限公司">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://wjyt.naluyeye.top/">
-    
-    <!-- Open Graph（微信/社媒分享显示） -->
-    <meta property="og:title" content="青岛万瑾运通物流有限公司 | 国际综合物流服务">
-    <meta property="og:description" content="专业国际货运代理，覆盖全球100+国家。海运、空运、陆运、报关一站式服务。">
-    <meta property="og:image" content="https://i.ibb.co/QF7XkrHN/Image-429.png">
-    <meta property="og:url" content="https://wjyt.naluyeye.top/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="zh_CN">
-    
-    <!-- 结构化数据（告诉Google这是什么公司） -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "青岛万瑾运通国际物流有限公司",
-      "alternateName": "WJYT LOGISTICS",
-      "url": "https://wjyt.naluyeye.top/",
-      "logo": "https://i.ibb.co/QF7XkrHN/Image-429.png",
-      "description": "专业国际货运代理，提供海运、空运、陆运、多式联运、报关、仓储等综合物流服务",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "卓越世纪中心3号楼",
-        "addressLocality": "青岛市市北区",
-        "addressRegion": "山东省",
-        "addressCountry": "CN"
-      },
-      "telephone": "+86-0532-83678714",
-      "email": "andy.yang@wjyt-qd.com"
-    }
-    </script>
+    <title>青岛万瑾运通物流有限公司 | WJYT LOGISTICS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -109,7 +72,7 @@
         .hero-btns { display: flex; gap: 20px; justify-content: center;  position: relative; z-index: 1; }
         
         /* Tracking */
-        .tracking-module { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 800px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); padding: 30px; border-radius: 4px; z-index: 1; }
+        .tracking-module { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 800px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); padding: 30px; border-radius: 4px;  position: relative; z-index: 1; }
         .tracking-form { display: flex; gap: 16px; }
         .tracking-input { flex: 1; padding: 16px 24px; font-size: 16px; border: 1px solid rgba(255, 255, 255, 0.3); background: rgba(255, 255, 255, 0.9); border-radius: 2px; outline: none; }
         .tracking-input:focus { border-color: var(--color-gold); }
@@ -1288,36 +1251,6 @@
             initScrollAnimations();
             setTimeout(runCountUp, 500);
         });
-    
-        // ======= 密码锁 =======
-        // 密码锁逻辑 - 等DOM就绪后执行
-        window.initPasswordLock = function initPasswordLock(){
-            var lock = document.getElementById('passwordLock');
-            if(!lock) return;
-            if(sessionStorage.getItem('wjyt_auth') === 'ok'){
-                lock.style.display = 'none';
-            }
-        }
-        // 立即执行一次，DOM加载完再执行一次
-        initPasswordLock();
-        document.addEventListener('DOMContentLoaded', initPasswordLock);
-
-        window.checkPW = function checkPW(){
-            var input = document.getElementById('pwInput').value.trim();
-            if(input === 'wjyt'){
-                sessionStorage.setItem('wjyt_auth','ok');
-                var lock = document.getElementById('passwordLock');
-                lock.style.transition = 'opacity 0.4s';
-                lock.style.opacity = '0';
-                setTimeout(function(){ lock.style.display = 'none'; }, 450);
-            } else {
-                var err = document.getElementById('pwError');
-                err.style.display = 'block';
-                document.getElementById('pwInput').value = '';
-                document.getElementById('pwInput').focus();
-                setTimeout(function(){ err.style.display = 'none'; }, 2000);
-            }
-        }
-    
     </script>
 </body>
+</html>
